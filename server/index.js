@@ -12,13 +12,13 @@ import {profileRouter} from './routes/Profile.js'
 const app = express()
 
 app.use(morgan("dev"));
-app.use(cors(
-    {
-        origin:["https://business-card-frontend-three.vercel.app"],
-        methods:["GET,POST,PATCH,DELETE"],
-        credentials: true
-    }
-));
+app.use(
+    cors({
+      origin: ['https://business-card-frontend-three.vercel.app'],
+      methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+      credentials: true,
+    })
+  );
 
 app.use(express.json({limit: '50mb'}));
 app.use(cookieParser());
