@@ -34,7 +34,9 @@ app.use(session({
 app.use('/auth', userRouter)
 app.use('/product', profileRouter)
 
-
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+  });
 
 // db
 mongoose.connect(process.env.MONGO_URI, {
