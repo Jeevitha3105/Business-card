@@ -1,7 +1,7 @@
 import { User } from "../models/User.js";
 import jwt from 'jsonwebtoken'
 import nodemailer from 'nodemailer'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import generateUniqueSessionId from "../helper/generateUniqueSessionId.js";
 
 // SIGNUP
