@@ -48,7 +48,7 @@ export default function Nav({ username,data}) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    axios.get('http://localhost:3000/auth/logout')
+    axios.get('https://e-business-card-nu.vercel.app/auth/logout')
       .then(res => {
         if (res.data.status) {
           navigate('/');

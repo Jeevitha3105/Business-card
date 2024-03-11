@@ -14,7 +14,8 @@ const app = express()
 app.use(morgan("dev"));
 app.use(cors(
     {
-        origin:["http://localhost:5173"],
+        origin:["https://business-card-frontend-three.vercel.app"],
+        methods:["GET,POST,PATCH,DELETE"],
         credentials: true
     }
 ));

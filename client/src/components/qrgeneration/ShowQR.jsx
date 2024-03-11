@@ -20,7 +20,7 @@ const ShowQR = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/product/getAllQRCodes"
+          "https://e-business-card-nu.vercel.app/product/getAllQRCodes"
         );
         setQRCodes(response.data);
       } catch (error) {
