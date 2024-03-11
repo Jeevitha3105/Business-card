@@ -34,8 +34,8 @@ app.use(session({
 app.use('/auth', userRouter)
 app.use('/product', profileRouter)
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
   });
 
 // db
